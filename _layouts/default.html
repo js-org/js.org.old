@@ -28,6 +28,7 @@
    <script src="js/zodiac.min.js"></script>
    {% endif %}
    <script>
+      {% if page.ghstars %}{% include ghstars.html %}{% endif %}
       {% include GA.html %}</script>
 </body>
 </html>
