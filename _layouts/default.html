@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js {% if page.bg %}bg{% endif %}" lang="en">
@@ -21,14 +21,12 @@
    {% include header.html %}
    {{ content }}
    {% include footer.html %}
-   <link href="css/js.css" rel="stylesheet" />
-
-   {% if page.zodiac %}
+   <link href="css/js.css" rel="stylesheet" />{% if page.zodiac %}
    <canvas id="zodiac" class="btf"></canvas>
-   <script src="js/zodiac.min.js"></script>
-   {% endif %}
+   <script src="js/zodiac.min.js"></script>{% endif %}
    <script>
       {% if page.ghstars %}{% include ghstars.html %}{% endif %}
-      {% include GA.html %}</script>
+      {% include GA.html %}
+   </script>
 </body>
 </html>
